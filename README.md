@@ -145,7 +145,7 @@ Built with:
 
 ---
 
-*Developed by GOWTHAM M  — HTML TO EXE CONVERTER v1.0*
+*Developed by BALAVIGNESH A— HTML TO EXE CONVERTER v1.0*
 
 
 

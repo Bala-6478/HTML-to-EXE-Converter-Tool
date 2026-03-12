@@ -5,7 +5,7 @@ Convert any HTML project into a native Windows desktop `.exe` application.
 
 ---  
 
-## 🚀 Quick Start
+## 🚀 Quick Start  
 
 ### Option 1 — GUI (Recommended)
 ```

@@ -1,154 +1,93 @@
 # ⚡ HTML TO EXE CONVERTER
-### Developed by BALAVIGNESH A
 
-Convert any HTML project into a native Windows desktop `.exe` application.
+> Convert any HTML / CSS / JavaScript project into a standalone Windows `.exe` desktop app.
 
----  
-
-## 🚀 Quick Start  
-
-### Option 1 — GUI (Recommended)
-```   
-Double-click build.bat
-```
-or
-```
-python converter.py
-```
-
-### Option 2 — CLI (Advanced)
-```
-python build_cli.py input/index.html
-python build_cli.py input/index.html --name MyApp --width 1280 --height 720
-python build_cli.py input/index.html --fullscreen --icon app.ico
-```
+**Developed by BEST_TEAM · v2.0 · Windows 10/11 · Python 3.8+**
 
 ---
 
-## 📁 Folder Structure
+## 📁 Project Structure
 
 ```
-HTML_TO_EXE_CONVERTER/
-│
-├── converter.py        ← Launch GUI
-├── gui.py              ← GUI interface
-├── builder.py          ← Build engine
-├── build_cli.py        ← Command-line mode
-├── build.bat           ← Windows launcher (double-click)
-│
+html-to-exe/
+├── converter.py        ← GUI app (main tool)
+├── build_cli.py        ← CLI tool
+├── build.bat           ← Double-click launcher
+├── setup.py            ← First-time setup
+├── cleanup.py          ← Remove temp files
+├── requirements.txt    ← Dependencies
 ├── input/
-│   └── index.html      ← Place your HTML file here
-│
-├── temp/               ← Build workspace (auto-created)
-├── dist/               ← Output EXE goes here
-└── logs/
-    └── build_logs.txt  ← Build logs
+│   └── index.html      ← Put your HTML here
+└── dist/
+    └── MyApp.exe       ← Output appears here
 ```
 
 ---
 
-## ⚙️ Requirements
+## 🚀 Quick Start
 
-- **Python 3.8+** — [python.org](https://python.org)
-- **Windows 10/11** (for EXE output)
-
-Dependencies are auto-installed on first run:
-- `pywebview` — browser engine
-- `pyinstaller` — EXE builder
-
----
-
-## 🎨 GUI Features
-
-| Feature | Description |
-|---|---|
-| Select HTML File | Browse to any `.html` file |
-| App Icon | Add a custom `.ico` icon |
-| App Name | Set the output EXE name |
-| Window Size | Set width & height |
-| Fullscreen | Launch fullscreen |
-| Resizable | Toggle resize |
-| Always on Top | Window stays on top |
-| Build Log | Real-time logs |
-| Progress Bar | Visual build progress |
-| Open Output | Quick access to `dist/` |
-
----
-
-## 📦 HTML Feature Support
-
-| Feature | Supported |
-|---|---|
-| HTML5 / CSS3 / JavaScript | ✅ |
-| Canvas / SVG / WebGL | ✅ |
-| Internet access / API calls | ✅ |
-| External CDN libraries | ✅ |
-| Images / Videos / Audio | ✅ |
-| Fonts / Icons | ✅ |
-| Drag & Drop / File input | ✅ |
-| localStorage / sessionStorage | ✅ |
-| IndexedDB | ✅ |
-| iframes | ✅ |
-| Animations | ✅ |
-| YouTube / embeds | ✅ |
-
----
-
-## 🔧 CLI Options
-
-```
-python build_cli.py [HTML_FILE] [OPTIONS]
-
-Options:
-  --name       Output EXE name (default: MyApp)
-  --icon       Path to .ico file
-  --width      Window width in px (default: 1200)
-  --height     Window height in px (default: 800)
-  --fullscreen Launch in fullscreen mode
-  --no-resize  Disable window resizing
-  --on-top     Always on top
+**1. Setup — run once**
+```bash
+python setup.py
 ```
 
+**2. Launch**
+```bash
+# GUI (recommended)
+build.bat
+
+# CLI
+python build_cli.py input/index.html --name MyApp --width 1280 --height 720
+```
+
+**3. Find your `.exe` in `dist/` and double-click to run!**
+
 ---
 
-## 📂 Asset Detection
+## ⚙️ CLI Options
 
-The converter **automatically detects and bundles**:
+| Flag | Default | Description |
+|------|---------|-------------|
+| `--name` | `MyApp` | EXE name |
+| `--width` | `1280` | Window width (px) |
+| `--height` | `720` | Window height (px) |
+| `--icon` | — | Path to `.ico` file |
+| `--fullscreen` | off | Launch fullscreen |
+| `--no-resize` | off | Fixed window size |
 
-- `./images/`, `./img/` — image folders
-- `./assets/` — general assets
-- `./scripts/`, `./js/` — JavaScript files
-- `./css/` — stylesheets
-- `./fonts/` — custom fonts
-- `./media/`, `./videos/`, `./audio/` — media files
-- `./static/`, `./icons/` — static resources
+---
 
-All files referenced via `src=`, `href=`, or `url()` in your HTML are auto-included.
+## 📦 Requirements
+
+- Python 3.8+ — [python.org/downloads](https://www.python.org/downloads/)
+- Windows 10 / 11
+- `pywebview` and `pyinstaller` — **auto-installed** by `setup.py`
 
 ---
 
 ## 💡 Tips
 
-1. **Single-file HTML works best** — embed CSS and JS inline
-2. **External resources** (CDN links) work if internet is available
-3. Add `app.ico` to the project root for a custom EXE icon
-4. Check `logs/build_logs.txt` if a build fails
+- Put CSS, JS, images in `css/`, `js/`, `assets/` folders next to your HTML — they bundle automatically
+- Use `.ico` format for icons
+- Build takes **1–3 minutes** — this is normal
+- Run `cleanup.py` after building to remove temp files
 
 ---
 
-## 📌 About
+## 🛠 Built With
 
-Built with:
-- **PyWebView** — Chromium-based embedded browser
-- **PyInstaller** — Python to EXE packaging
-- **Tkinter** — GUI framework
+| | |
+|---|---|
+| [PyWebView](https://pywebview.flowrl.com/) | Renders HTML in a native window |
+| [PyInstaller](https://pyinstaller.org/) | Packages everything into `.exe` |
+| Tkinter | GUI framework for the converter |
 
 ---
-
-*Developed by BALAVIGNESH A— HTML TO EXE CONVERTER v1.0*
-
 
 
 ### 📸 Preview
 
 ![3D Model Viewer Screenshot]()
+
+---
+*⚡ Developed by **BEST_TEAM** · v2.0*

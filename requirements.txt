@@ -1,0 +1,22 @@
+# =============================================================================
+#  FILE        : requirements.txt
+#  DESCRIPTION : Python dependencies for HTML TO EXE CONVERTER
+#  AUTHOR      : BEST_TEAM
+#  VERSION     : 2.0
+#
+#  INSTALL ALL:
+#    pip install -r requirements.txt
+#
+#  OR run the automatic setup:
+#    python setup.py
+# =============================================================================
+
+# ─────────────────────────────────────────────────────────────────────────────
+#  RUNTIME DEPENDENCIES
+# ─────────────────────────────────────────────────────────────────────────────
+
+# pywebview — renders HTML/CSS/JS inside a native desktop window
+pywebview>=4.0
+
+# pyinstaller — packages the app + HTML files into a single .exe
+pyinstaller>=5.13

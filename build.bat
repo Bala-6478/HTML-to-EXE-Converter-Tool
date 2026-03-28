@@ -3,7 +3,7 @@
 ::  FILE        : build.bat
 ::  DESCRIPTION : Windows launcher — opens the HTML TO EXE CONVERTER GUI
 ::  AUTHOR      : BEST_TEAM
-::  VERSION     : 2.0
+::  VERSION     : 3.0
 ::  USAGE       : Double-click this file to launch the converter
 :: =============================================================================
 chcp 65001 >nul 2>&1
@@ -13,7 +13,7 @@ cls
 echo.
 echo  ╔══════════════════════════════════════════════════════════╗
 echo  ║                                                          ║
-echo  ║      ⚡  HTML TO EXE CONVERTER  ·  v2.0                 ║
+echo  ║      ⚡  HTML TO EXE CONVERTER  ·  v3.0                 ║
 echo  ║                                                          ║
 echo  ║              Developed by  BEST_TEAM                     ║
 echo  ║                                                          ║

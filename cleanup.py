@@ -2,7 +2,7 @@
 #  FILE        : cleanup.py
 #  DESCRIPTION : Remove temporary build files after a successful build
 #  AUTHOR      : BEST_TEAM
-#  VERSION     : 2.0
+#  VERSION     : 3.0
 #  USAGE       : python cleanup.py
 # =============================================================================
 
@@ -16,7 +16,7 @@ import shutil
 #  APP INFO
 # ─────────────────────────────────────────────────────────────────────────────
 APP_AUTHOR  = "BEST_TEAM"
-APP_VERSION = "v2.0"
+APP_VERSION = "v3.0"
 
 # ─────────────────────────────────────────────────────────────────────────────
 #  TERMINAL COLORS
@@ -45,7 +45,7 @@ def main():
     print(f"""
 {CY}{BLD}╔══════════════════════════════════════════════════════════╗
 ║                                                          ║
-║      ⚡  HTML TO EXE CONVERTER  ·  CLEANUP  ·  v2.0     ║
+║      ⚡  HTML TO EXE CONVERTER  ·  CLEANUP  ·  v3.0     ║
 ║                                                          ║
 ║              Developed by  BEST_TEAM                     ║
 ║                                                          ║

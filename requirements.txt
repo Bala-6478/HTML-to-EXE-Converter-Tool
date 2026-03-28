@@ -2,7 +2,7 @@
 #  FILE        : requirements.txt
 #  DESCRIPTION : Python dependencies for HTML TO EXE CONVERTER
 #  AUTHOR      : BEST_TEAM
-#  VERSION     : 2.0
+#  VERSION     : 3.0
 #
 #  INSTALL ALL:
 #    pip install -r requirements.txt

@@ -2,7 +2,7 @@
 #  FILE        : setup.py
 #  DESCRIPTION : First-time setup — installs all dependencies
 #  AUTHOR      : BEST_TEAM
-#  VERSION     : 2.0
+#  VERSION     : 3.0
 #  USAGE       : python setup.py
 # =============================================================================
 

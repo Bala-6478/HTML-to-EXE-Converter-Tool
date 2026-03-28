@@ -2,7 +2,7 @@
 #  FILE        : build_cli.py
 #  DESCRIPTION : CLI Mode — Build HTML to EXE from the command line
 #  AUTHOR      : BEST_TEAM
-#  VERSION     : 2.0
+#  VERSION     : 3.0
 #  PLATFORM    : Windows 10 / 11
 #  PYTHON      : 3.8+
 #
@@ -28,7 +28,7 @@ import textwrap
 # ─────────────────────────────────────────────────────────────────────────────
 APP_NAME    = "HTML TO EXE CONVERTER"
 APP_AUTHOR  = "BEST_TEAM"
-APP_VERSION = "v2.0"
+APP_VERSION = "v3.0"
 
 # ─────────────────────────────────────────────────────────────────────────────
 #  TERMINAL COLORS  (ANSI)
@@ -92,8 +92,8 @@ def print_banner():
     print(f"""
 {CY}{BLD}╔══════════════════════════════════════════════════════════╗
 ║                                                          ║
-║      ⚡  HTML TO EXE CONVERTER  ·  CLI  ·  v2.0         ║
-║                                                          ║
+║      ⚡  HTML TO EXE CONVERTER  ·  CLI  ·  v3.0         ║
+║                                                         ║
 ║              Developed by  BEST_TEAM                     ║
 ║                                                          ║
 ╚══════════════════════════════════════════════════════════╝{RST}

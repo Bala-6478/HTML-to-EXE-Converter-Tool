@@ -118,3 +118,9 @@ python build_cli.py input/index.html --name MyApp --no-resize
 ---
 
 *⚡ Developed by **BEST_TEAM** · v3.0*
+
+![Image Alt](
+
+![Image Alt](
+
+![Image Alt](
